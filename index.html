@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Rose 🌹</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================
+         BACKGROUND PARTICLES
+    ================================== -->
+
+    <div class="background-particles" id="backgroundParticles"></div>
+
+
+    <!-- =================================
+         MUSIC
+    ================================== -->
+
+    <audio id="bgMusic" preload="auto">
+
+        <source src="music/birthday.mp3" type="audio/mpeg">
+
+        Your browser does not support audio.
+
+    </audio>
+
+
+    <!-- =================================
+         MUSIC CONTROL
+    ================================== -->
+
+    <button
+        id="musicControl"
+        class="music-control"
+        onclick="toggleMusic()"
+        aria-label="Toggle music"
+    >
+
+        🎵
+
+    </button>
+
+
+
+    <!-- =================================
+         PAGE 1
+    ================================== -->
+
+    <section id="page1" class="screen active-screen">
+
+
+        <main class="container">
+
+
+            <div class="hearts">
+
+                ❤️ ✨ 🌹 ✨ ❤️
+
+            </div>
+
+
+            <p class="small-text">
+
+                A LITTLE SURPRISE
+
+            </p>
+
+
+            <h1>
+
+                For Someone
+
+                <br>
+
+                Special 💖
+
+            </h1>
+
+
+            <h2>
+
+                🎂 Happy Birthday, Rose 🎂
+
+            </h2>
+
+
+            <div class="message">
+
+                <p>
+
+                    “Some people enter our life like a beautiful
+                    moment, but a few become a beautiful memory
+                    forever. 🌹
+
+                </p>
+
+
+                <p>
+
+                    Like a rose that makes a garden beautiful,
+                    your presence makes ordinary moments feel special.
+
+                </p>
+
+
+                <p>
+
+                    Today is your day, Rose...
+
+                    <br>
+
+                    So let this little surprise remind you
+                    how beautifully special you are. ✨
+
+                </p>
+
+            </div>
+
+
+            <button
+                class="main-button"
+                onclick="openSurprise()"
+            >
+
+                🎁 Open Your Surprise
+
+            </button>
+
+
+            <div id="surprise">
+
+                💕 Your special surprise is waiting for you,
+                Rose... 🌹
+
+            </div>
+
+
+        </main>
+
+
+    </section>
+
+
+
+    <!-- =================================
+         PAGE 2
+    ================================== -->
+
+    <section id="page2" class="screen">
+
+
+        <main class="page2-content">
+
+
+            <p class="small-title">
+
+                A LITTLE MEMORY BOOK
+
+            </p>
+
+
+            <h1>
+
+                For You, Rose 🌹
+
+            </h1>
+
+
+            <p class="intro">
+
+                Some moments are too beautiful to be forgotten...
+
+            </p>
+
+
+
+            <!-- HERO PHOTO -->
+
+            <section class="hero-photo">
+
+
+                <div class="photo-glow"></div>
+
+
+                <div class="photo-frame">
+
+
+                    <div class="photo-shine"></div>
+
+
+                    <img
+                        src="images/rose.jpg"
+                        alt="Beautiful Rose"
+                    >
+
+
+                </div>
+
+
+                <div class="photo-caption">
+
+                    <span>🌹</span>
+
+                    You are as beautiful as a rose
+
+                    <span>🌹</span>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- POEM -->
+
+            <section class="poem">
+
+
+                <div class="quote-mark">
+
+                    “
+
+                </div>
+
+
+                <p>
+
+                    A rose doesn't need to explain
+                    why it is beautiful...
+
+                </p>
+
+
+                <p>
+
+                    And some people don't need a reason
+                    to become special.
+
+                </p>
+
+
+                <p>
+
+                    You are one of those beautiful reasons,
+                    Rose. ❤️
+
+                </p>
+
+
+            </section>
+
+
+
+            <!-- MEMORIES -->
+
+            <section class="memories">
+
+
+                <h2>
+
+                    ✨ Little Memories ✨
+
+                </h2>
+
+
+                <div class="memory-grid">
+
+
+                    <!-- MEMORY 1 -->
+
+                    <div class="memory-card">
+
+
+                        <div class="memory-image">
+
+                            <img
+                                src="images/memory1.jpg"
+                                alt="Rose Memory 1"
+                            >
+
+                            <div class="image-overlay">
+
+                                💕 Beautiful Moment
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="memory-content">
+
+                            <h3>
+
+                                A Beautiful Moment 💕
+
+                            </h3>
+
+
+                            <p>
+
+                                Some moments are too beautiful
+                                to be forgotten.
+
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- MEMORY 2 -->
+
+                    <div class="memory-card">
+
+
+                        <div class="memory-image">
+
+                            <img
+                                src="images/memory2.jpg"
+                                alt="Rose Memory 2"
+                            >
+
+                            <div class="image-overlay">
+
+                                🌹 Special Memory
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="memory-content">
+
+                            <h3>
+
+                                A Special Memory 🌹
+
+                            </h3>
+
+
+                            <p>
+
+                                Some memories stay close
+                                to our heart forever.
+
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- NEXT -->
+
+            <div class="next-section">
+
+
+                <div class="next-heart">
+
+                    💖
+
+                </div>
+
+
+                <p>
+
+                    There is still one more surprise waiting...
+
+                </p>
+
+
+                <button
+                    class="main-button"
+                    onclick="goToFinalPage()"
+                >
+
+                    💌 Continue the Surprise
+
+                </button>
+
+
+            </div>
+
+
+        </main>
+
+
+    </section>
+
+
+
+    <!-- =================================
+         PAGE 3
+    ================================== -->
+
+    <section id="page3" class="screen">
+
+
+        <main class="final-page">
+
+
+            <p class="top-text">
+
+                THIS IS FOR YOU, ROSE
+
+            </p>
+
+
+            <h1>
+
+                Happy Birthday
+
+            </h1>
+
+
+            <h2>
+
+                Rose 🌹
+
+            </h2>
+
+
+
+            <!-- CAKE -->
+
+            <div class="cake-area">
+
+
+                <div class="cake-glow"></div>
+
+
+                <div class="candle">
+
+                    🕯️
+
+                </div>
+
+
+                <div class="cake">
+
+                    🎂
+
+                </div>
+
+
+                <div class="sparkles">
+
+                    ✨ ✨ ✨
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- BIRTHDAY MESSAGE -->
+
+            <section class="birthday-card">
+
+
+                <div class="card-decoration">
+
+                    ❤️ ✨ ❤️
+
+                </div>
+
+
+                <h3>
+
+                    Dear Rose ❤️
+
+                </h3>
+
+
+                <p>
+
+                    Today is not just another day...
+                    It's the day a beautiful soul came into this world. 🌹
+
+                </p>
+
+
+                <p>
+
+                    I hope this birthday brings you countless smiles,
+                    beautiful moments, and everything your heart wishes for.
+
+                </p>
+
+
+                <p>
+
+                    Keep smiling, keep shining,
+                    and always remember how special you are. ✨
+
+                </p>
+
+
+            </section>
+
+
+
+            <!-- TAMIL KAVITHAI -->
+
+            <section class="final-poem">
+
+
+                <h3>
+
+                    🌹 A Little Birthday Kavithai 🌹
+
+                </h3>
+
+
+                <p>
+
+                    “மலரை போல மென்மையான மனசு,
+                    நிலவை போல அழகான சிரிப்பு...
+
+                </p>
+
+
+                <p>
+
+                    ஆயிரம் பேரில் பார்த்தாலும்,
+                    உன்னை மட்டும் நினைவில் வைக்கும்
+                    ஏதோ ஒரு அழகு உன்னிடம் இருக்கிறது. ❤️
+
+                </p>
+
+
+                <p>
+
+                    இந்த பிறந்தநாள் போலவே,
+                    உன் வாழ்க்கையின் ஒவ்வொரு நாளும்
+                    சந்தோஷமாக இருக்கட்டும். ✨
+
+                </p>
+
+
+            </section>
+
+
+
+            <!-- FINAL WISH -->
+
+            <div class="final-wish">
+
+
+                <div class="line"></div>
+
+
+                <p>
+
+                    May your life always be filled with love,
+                    happiness and beautiful memories. 💖
+
+                </p>
+
+
+                <h3>
+
+                    Once Again...
+
+                </h3>
+
+
+                <h4>
+
+                    🎂 HAPPY BIRTHDAY ROSE 🎂
+
+                </h4>
+
+
+                <p class="love">
+
+                    Stay Happy.
+                    Stay Beautiful.
+                    Stay You. 🌹
+
+                </p>
+
+
+                <div class="line"></div>
+
+
+            </div>
+
+
+
+            <!-- CELEBRATE -->
+
+            <button
+                class="main-button celebrate-button"
+                onclick="celebrate()"
+            >
+
+                🎉 Celebrate Again
+
+            </button>
+
+
+        </main>
+
+
+    </section>
+
+
+
+    <!-- =================================
+         JAVASCRIPT
+    ================================== -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
